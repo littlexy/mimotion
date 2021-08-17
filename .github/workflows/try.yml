@@ -15,7 +15,8 @@ jobs:
       with:
         python-version: 3.7
     - name: 开始
-      run: |
+      run: 
+        /opt/hostedtoolcache/Python/3.7.11/x64/bin/python -m pip install --upgrade pip
         pip install requests
         sckey='${{ secrets.SCKEY }}'
         key='${{ secrets.KEY }}'
